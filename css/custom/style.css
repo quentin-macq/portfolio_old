@@ -1,0 +1,258 @@
+/* Paramètres page complète */
+html, body {
+    height: 100%;
+    background-color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+
+/* Paramètres généraux */
+.red {
+    color: rgb(207, 40, 40);
+}
+
+.white {
+    color: white;
+}
+
+.page-color {
+    background-color: rgba(0, 0, 0, 0.747);
+}
+
+.line-color {
+    width: 500px;
+    background-color: rgb(207, 40, 40);
+}
+
+.border {
+    border-radius: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.test {
+    background-color: #262626;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.margin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-right {
+    margin-right: 15px;
+}
+
+
+/* Bannière */
+.intro {
+    z-index: 4;
+    position: relative;
+}
+
+.heading {
+    color: white;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 3rem;
+    }
+}
+
+.text {
+    font-size: 3rem;
+    font-weight: 300;
+    color: rgb(245, 96, 10);
+}
+
+.img-container {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.inner-container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: auto;
+}
+
+.slide .row {
+    min-height: 600px;
+    height: calc(100vh);
+}
+
+.banner-item {
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.banner-item:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-item img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* Ajout d'un espace pour éviter que le menu ne cache les titres de chaque partie */
+h1 {
+    padding-top: 85px;
+    margin-top: -85px;
+}
+
+
+/* Paramètres nav-bar */
+.navbar {
+    background-color: white !important;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(207, 40, 40);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(207, 40, 40, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-item {
+    font-size: 21px;
+}
+
+.nav-link {
+    color: rgb(207, 40, 40);
+}
+
+.nav-item a:hover {
+    color: white;
+    background-color: rgb(204, 40, 40);
+    border-radius: 7px;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* Badges liens */
+.badge- {
+    display: block;
+    margin: 0 auto;
+    height: 48px;
+}
+
+.badge-:hover {
+    opacity: 0.3;
+}
+
+.mangacollec-badge-follow {
+    height: 48px;
+    width: 48px;
+    border-radius: 8px;
+    background: url(../../images/mangacollec.png);
+}
+
+.strava-badge-follow {
+    height: 48px;
+    width: 48px;
+    background: url(../../images/strava.png) no-repeat 0 0;
+}
+
+/* Paramètres du bouton de retour vers le haut */
+.scroll-up {
+    position: fixed;
+    bottom: 1.7em;
+    right: 1.7em;
+    z-index: 1;
+    width: 35px;
+    height: 33px;
+}
+
+
+/* Paramètres de la partie présentation */
+.loisirs-title {
+    color: rgb(207, 40, 40);
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.loisirs-text {
+    font-size: 18px;
+}
+
+.size-img {
+    width: 320px;
+    height: 190px;
+}
+
+.lien:link {
+    text-decoration: none;
+    color: rgb(207, 40, 40);
+}
+
+.lien:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.competences {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.title-competence {
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.text-competence {
+    color: #ffb12b;
+    font-size: 19px;
+    font-style: italic;
+}
+
+
+/* Paramètres des boutons */
+.btn {
+    background-color: rgb(207, 40, 40);
+    border-color: rgb(207, 40, 40);
+}
+
+.btn:hover {
+    color: rgb(204, 40, 40);
+    border-color: rgb(204, 40, 40);
+    background-color: white;
+}
+
+
+/* Paramètres du formulaire */
+.required {
+    color: red;
+}
